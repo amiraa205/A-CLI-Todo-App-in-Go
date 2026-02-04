@@ -10,5 +10,6 @@ func main() {
 	cmdFlags.Execute(&todos)
 	todos.print()
 	storage.Save(todos)
+	todos.cleanup()
 
 }
